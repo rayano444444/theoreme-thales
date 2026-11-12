@@ -1,6 +1,6 @@
 # Le théorème de Thalès
 
-Cours interactif de mathématiques : histoire, configurations, laboratoire, méthode de terrain, démonstration, quiz et diaporama.
+Cours interactif de mathématiques : histoire, configurations, laboratoire, méthode de terrain, mesure de la pyramide, quiz et diaporama.
 
 ## Voir le site
 

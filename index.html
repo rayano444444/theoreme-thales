@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Le théorème de Thalès — une parallèle qui mesure le monde</title>
-<meta name="description" content="Un cours interactif de 3e sur le théorème de Thalès : l'histoire de Thalès et du Nil, la configuration triangle, le papillon, la réciproque, un laboratoire manipulable, une méthode de terrain, un projet de classe, la rédaction type et un quiz de 15 questions.">
-<meta name="theme-color" content="#0b0a0d">
+<meta name="description" content="Un cours interactif de 3e sur le théorème de Thalès : l'histoire de Thalès et du Nil, la configuration triangle, le papillon, la réciproque, un laboratoire manipulable, une méthode de terrain et un quiz de 15 questions.">
+<meta name="theme-color" content="#f4efe4">
 <meta property="og:title" content="Le théorème de Thalès — une parallèle qui mesure le monde">
-<meta property="og:description" content="Cours interactif de 3e : l'histoire, la démonstration, le laboratoire, le projet de classe et un quiz de 15 questions.">
+<meta property="og:description" content="Cours interactif de 3e : l'histoire, le laboratoire, la méthode de terrain et un quiz de 15 questions.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070b16'/%3E%3Cpath d='M32 12 12 52h40z' fill='none' stroke='%237ce3cf' stroke-width='3'/%3E%3Cpath d='M25 32h14' stroke='%23f6b26b' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f4efe4'/%3E%3Cpath d='M32 12 12 52h40z' fill='none' stroke='%23c43a2d' stroke-width='3'/%3E%3Cpath d='M25 32h14' stroke='%23a9741f' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -32,8 +32,6 @@
     <a href="#idee">L'idée</a>
     <a href="#laboratoire">Laboratoire</a>
     <a href="#methode">Méthode</a>
-    <a href="#projet">Projet</a>
-    <a href="#rediger">Rédiger</a>
     <a href="#quiz" class="nav-quiz">Quiz <span>15</span></a>
     <a href="slides.html" class="nav-deck">Diaporama <span aria-hidden="true">↗</span></a>
   </nav>
@@ -47,12 +45,6 @@
 
   <!-- ================= HERO ================= -->
   <section class="hero" id="haut">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="hero-orb hero-orb--1"></div>
-      <div class="hero-orb hero-orb--2"></div>
-      <div class="hero-grid"></div>
-    </div>
-
     <div class="hero-inner">
       <div class="hero-copy">
         <p class="eyebrow">
@@ -90,14 +82,10 @@
       </div>
 
       <div class="hero-visual">
-        <div class="figure-frame">
-          <span class="figure-tag">Figure 01</span>
-          <svg id="hero-svg" viewBox="0 0 540 500" role="img" aria-label="Triangle ABC avec une droite MN parallèle au côté BC, le point M se déplaçant sur le côté AB."></svg>
-          <div class="figure-caption">
-            <span class="live-dot"></span>
-            <span>le point M se déplace — les rapports restent égaux</span>
-          </div>
-        </div>
+        <figure class="hero-photo">
+          <img src="assets/img/hero-pyramide.png" alt="Thalès devant la pyramide : un bâton planté droit, son ombre et celle du monument permettent de calculer la hauteur de la pyramide." width="534" height="266" fetchpriority="high">
+          <figcaption>La mesure de la pyramide par son ombre — la figure fondatrice du chapitre.</figcaption>
+        </figure>
         <div class="hero-equation" aria-hidden="true">
           <span class="fraction"><span class="fnum">AM</span><span class="fden">AB</span></span>
           <span class="eq">=</span>
@@ -200,9 +188,9 @@
               <desc id="sim-svg-desc">Un bâton de 1,20 mètre projette une ombre de 2,10 mètres. La pyramide projette une ombre de 246 mètres. Les rayons du Soleil sont parallèles : les deux triangles sont semblables et la hauteur de la pyramide vaut environ 140,6 mètres.</desc>
               <defs>
                 <linearGradient id="sim-sky" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#191319"/>
-                  <stop offset=".58" stop-color="#100d12"/>
-                  <stop offset="1" stop-color="#0b0a0d"/>
+                  <stop offset="0" stop-color="#f8f3e7"/>
+                  <stop offset=".58" stop-color="#f1e9d9"/>
+                  <stop offset="1" stop-color="#e8dfcd"/>
                 </linearGradient>
                 <radialGradient id="sim-sun-glow" cx=".5" cy=".5" r=".5">
                   <stop offset="0" stop-color="#ffe4b8" stop-opacity=".85"/>
@@ -259,7 +247,7 @@
               </g>
 
               <ellipse cx="500" cy="400" rx="520" ry="112" fill="url(#sim-ground-glow)" opacity=".5"/>
-              <rect y="400" width="1000" height="120" fill="#0c0a0e"/>
+              <rect y="400" width="1000" height="120" fill="#e6dcc6"/>
               <path d="M0 400H1000" class="sim-ground-line"/>
               <g class="sim-ground-tex" aria-hidden="true">
                 <path d="M58 424h92M224 442h58M474 456h82M760 430h126M884 448h64M352 470h44"/>
@@ -696,10 +684,6 @@
       </div>
     </div>
 
-    <div class="next-inline">
-      <span>Pour comprendre pourquoi ça marche :</span>
-      <a href="#demonstration">voir la démonstration pas à pas <span aria-hidden="true">→</span></a>
-    </div>
   </section>
 
   <!-- ================= 04 MÉTHODE ================= -->
@@ -725,12 +709,12 @@
             <desc id="tree-scene-desc">Le bâton et l'arbre projettent leurs ombres dans la même direction. Les deux rayons du Soleil qui passent par leur sommet sont parallèles : c'est l'hypothèse de Thalès.</desc>
             <defs>
               <linearGradient id="tree-sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#191319"/>
-                <stop offset="1" stop-color="#0d0b10"/>
+                <stop offset="0" stop-color="#f8f3e7"/>
+                <stop offset="1" stop-color="#ece2cf"/>
               </linearGradient>
               <linearGradient id="tree-leaf" x1=".2" y1="0" x2=".8" y2="1">
-                <stop offset="0" stop-color="#3a2f30"/>
-                <stop offset="1" stop-color="#1a1520"/>
+                <stop offset="0" stop-color="#8b9a76"/>
+                <stop offset="1" stop-color="#5f7150"/>
               </linearGradient>
               <radialGradient id="tree-sun-glow" cx=".5" cy=".5" r=".5">
                 <stop offset="0" stop-color="#ff5a4d" stop-opacity=".4"/>
@@ -754,15 +738,15 @@
             </g>
 
             <!-- sol et ombres -->
-            <path d="M38 268h524" stroke="rgba(246,239,230,.26)" stroke-width="1.3" stroke-linecap="round"/>
-            <ellipse cx="429" cy="270" rx="130" ry="8" fill="#000" opacity=".45"/>
-            <ellipse cx="126" cy="270" rx="30" ry="4.5" fill="#000" opacity=".45"/>
+            <path d="M38 268h524" stroke="rgba(22,25,31,.28)" stroke-width="1.3" stroke-linecap="round"/>
+            <ellipse cx="429" cy="270" rx="130" ry="8" fill="#3c3a34" opacity=".14"/>
+            <ellipse cx="126" cy="270" rx="30" ry="4.5" fill="#3c3a34" opacity=".14"/>
 
             <!-- arbre -->
-            <path d="M292 268 296 116h8l4 152Z" fill="#e8b567" opacity=".32"/>
-            <path d="M298 250V128" stroke="#e8b567" stroke-width="1" opacity=".22"/>
-            <path d="M300 44c26 0 48 16 52 40 18 6 26 28 14 44-4 20-22 32-40 30-10 14-32 20-48 12-18 4-34-8-36-24-16-8-20-28-8-42 2-28 30-60 66-60Z" fill="url(#tree-leaf)" stroke="#e8b567" stroke-opacity=".45" stroke-width="1.3"/>
-            <g fill="none" stroke="#e8b567" stroke-width="1.1" stroke-linecap="round" opacity=".28">
+            <path d="M292 268 296 116h8l4 152Z" fill="#b98a3c" opacity=".35"/>
+            <path d="M298 250V128" stroke="#8a6428" stroke-width="1" opacity=".35"/>
+            <path d="M300 44c26 0 48 16 52 40 18 6 26 28 14 44-4 20-22 32-40 30-10 14-32 20-48 12-18 4-34-8-36-24-16-8-20-28-8-42 2-28 30-60 66-60Z" fill="url(#tree-leaf)" stroke="#6b5a2a" stroke-opacity=".6" stroke-width="1.3"/>
+            <g fill="none" stroke="#6b5a2a" stroke-width="1.1" stroke-linecap="round" opacity=".45">
               <path d="M258 108c8-12 22-17 34-14"/>
               <path d="M300 76c14 2 24 12 28 24"/>
               <path d="M276 138c10 6 24 6 34 0"/>
@@ -810,392 +794,11 @@
   </section>
 
 
-  <!-- ================= 05 PROJET ================= -->
-  <section class="section section--tint" id="projet" data-section>
-    <div class="section-head">
-      <div class="section-num" aria-hidden="true">05</div>
-      <div class="section-head-text">
-        <p class="kicker">Le projet de classe</p>
-        <h2>Mesurer le lycée,<br>pas seulement un arbre</h2>
-      </div>
-      <p class="section-intro">
-        Trois variantes pour enrichir le projet, une méthode de visée pour les
-        jours sans soleil, et une grille qui évalue la démarche autant que le
-        résultat. La fiche distribuée en classe tient sur une page.
-      </p>
-    </div>
-
-    <div class="project-grid">
-      <article class="project-variant card">
-        <span class="variant-letter">A</span>
-        <h3>La photo de scène</h3>
-        <p>Photographier l'arbre ou le bâtiment, puis tracer les triangles directement sur l'image. On vérifie ainsi que la parallèle est bien là.</p>
-      </article>
-      <article class="project-variant card">
-        <span class="variant-letter">B</span>
-        <h3>La superposition GeoGebra</h3>
-        <p>Importer la photo dans GeoGebra et faire glisser le modèle théorique sur le réel : alignements, sommet commun, parallèle.</p>
-      </article>
-      <article class="project-variant card">
-        <span class="variant-letter">C</span>
-        <h3>La visée sans soleil</h3>
-        <p>Un bâton, une croix du bûcheron ou un miroir au sol : on fabrique l'alignement à la place du rayon de Soleil.</p>
-      </article>
-    </div>
-
-    <div class="project-bottom">
-      <div class="eval-card card">
-        <p class="eval-kicker">Grille d'évaluation</p>
-        <h3>Ce qui compte vraiment</h3>
-        <table class="eval-table">
-          <thead><tr><th>Critère</th><th>Très bien</th><th>Satisfaisant</th></tr></thead>
-          <tbody>
-            <tr><th>Hypothèses</th><td>Parallélisme et alignements justifiés</td><td>Mentionnés</td></tr>
-            <tr><th>Mesures</th><td>Unités, précision, incertitude</td><td>Mesures cohérentes</td></tr>
-            <tr><th>Calcul</th><td>Proportion posée et vérifiée</td><td>Résultat exact</td></tr>
-            <tr><th>Présentation</th><td>Schéma clair, oral construit</td><td>Lisible</td></tr>
-          </tbody>
-        </table>
-        <p class="eval-note">On n'évalue pas seulement le nombre final : la proportion posée, les unités et la vérification comptent autant.</p>
-      </div>
-
-      <div class="mirror-card card">
-        <span class="chip chip--amber">Sans soleil</span>
-        <h3>La méthode de la visée</h3>
-        <ol class="steps mirror-steps">
-          <li><b>Poser le miroir</b> à plat sur le sol, entre l'arbre et soi.</li>
-          <li><b>Reculer</b> jusqu'à voir le sommet dans le miroir : l'œil, le miroir et le sommet sont alignés.</li>
-          <li><b>Mesurer</b> la hauteur de l'œil, la distance œil–miroir et la distance miroir–arbre.</li>
-          <li><b>Appliquer Thalès</b> : les deux triangles rectangles se font face.</li>
-        </ol>
-        <p class="mirror-calc">h = 1,60 × 8 ÷ 2 = <b>6,4 m</b></p>
-        <p class="eval-note"><b>Variante :</b> la croix du bûcheron, tenue à bout de bras, aligne deux points à hauteur connue. Même configuration, autre instrument.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= 06 RÉDIGER (clair) ================= -->
-  <section class="section section--paper" id="rediger" data-section>
-    <div class="paper-head">
-      <div class="section-num" aria-hidden="true">06</div>
-      <div>
-        <p class="kicker kicker--dark">La copie parfaite</p>
-        <h2>Ce que le correcteur<br>attend, mot pour mot</h2>
-      </div>
-      <p class="section-intro section-intro--dark">
-        Thalès n'est pas difficile : c'est la rédaction qui fait perdre des
-        points. Cinq gestes, toujours dans le même ordre, et la justification
-        est complète.
-      </p>
-    </div>
-
-    <ol class="big-steps">
-      <li><span class="big-step-num">01</span><div><h3>Nommer la configuration</h3><p>« Les points A, M, B sont alignés dans cet ordre, ainsi que A, N, C. »</p></div></li>
-      <li><span class="big-step-num">02</span><div><h3>Donner l'hypothèse</h3><p>« (MN) ∥ (BC). » C'est elle qui autorise le théorème. Sans elle, rien.</p></div></li>
-      <li><span class="big-step-num">03</span><div><h3>Citer le théorème</h3><p>« D'après le théorème de Thalès, … » Une citation, pas un sous-entendu.</p></div></li>
-      <li><span class="big-step-num">04</span><div><h3>Écrire les rapports</h3><p>Le sommet commun A en premier, puis petit/grand pour chaque côté.</p></div></li>
-      <li><span class="big-step-num">05</span><div><h3>Calculer et conclure</h3><p>Produit en croix, valeur exacte ou arrondie, et surtout : l'unité.</p></div></li>
-    </ol>
-
-    <div class="copy-card">
-      <div class="copy-tabs" role="tablist" aria-label="Type d'exercice">
-        <button role="tab" id="tab-calc" aria-selected="true" aria-controls="panel-calc" class="copy-tab is-active" type="button">Calculer une longueur</button>
-        <button role="tab" id="tab-proof" aria-selected="false" aria-controls="panel-proof" class="copy-tab" type="button">Prouver un parallélisme</button>
-      </div>
-
-      <div class="copy-panels">
-        <div class="copy-panel is-active" id="panel-calc" role="tabpanel" aria-labelledby="tab-calc">
-          <div class="copy-sheet">
-            <div class="sheet-meta">
-              <span>Exercice 3</span>
-              <span>Chapitre 07 — Thalès</span>
-            </div>
-            <p class="sheet-enonce">
-              ABC est un triangle. M ∈ [AB], N ∈ [AC] et (MN) ∥ (BC).
-              On donne <b>AB = 6 cm</b>, <b>AM = 4 cm</b>, <b>AC = 9 cm</b> et <b>BC = 7,5 cm</b>.
-              Calculer AN et MN.
-            </p>
-            <div class="sheet-copy">
-              <p><span class="anno" data-anno="1">Les points A, M, B sont alignés dans cet ordre, ainsi que A, N, C.</span></p>
-              <p><span class="anno" data-anno="2">(MN) ∥ (BC).</span></p>
-              <p><span class="anno" data-anno="3">D'après le théorème de Thalès :</span></p>
-              <p class="sheet-eq">
-                <span class="anno" data-anno="4"><span class="fraction"><span class="fnum">AM</span><span class="fden">AB</span></span>
-                = <span class="fraction"><span class="fnum">AN</span><span class="fden">AC</span></span>
-                = <span class="fraction"><span class="fnum">MN</span><span class="fden">BC</span></span></span>
-              </p>
-              <p class="sheet-eq"><span class="fraction"><span class="fnum">4</span><span class="fden">6</span></span> = <span class="fraction"><span class="fnum">AN</span><span class="fden">9</span></span> = <span class="fraction"><span class="fnum">MN</span><span class="fden">7,5</span></span></p>
-              <p><span class="anno" data-anno="5">AN = 4 × 9 ÷ 6 = 6 cm</span></p>
-              <p><span class="anno" data-anno="5">MN = 4 × 7,5 ÷ 6 = 5 cm</span></p>
-              <p class="sheet-conclusion">Donc <b>AN = 6 cm</b> et <b>MN = 5 cm</b>.</p>
-            </div>
-            <div class="sheet-stamp">Justifié</div>
-          </div>
-
-          <ul class="anno-list">
-            <li data-anno="1"><span class="anno-key">1</span><div><b>Les alignements.</b> On précise l'ordre, car il garantit que M et N sont du même côté de A.</div></li>
-            <li data-anno="2"><span class="anno-key">2</span><div><b>Le parallélisme.</b> C'est l'hypothèse du théorème. L'oublier, c'est perdre la moitié des points.</div></li>
-            <li data-anno="3"><span class="anno-key">3</span><div><b>La citation.</b> Le nom du théorème doit apparaître noir sur blanc.</div></li>
-            <li data-anno="4"><span class="anno-key">4</span><div><b>L'ordre des rapports.</b> A en haut, puis les longueurs qui partent du même sommet, dans le même sens.</div></li>
-            <li data-anno="5"><span class="anno-key">5</span><div><b>Le produit en croix.</b> Une ligne de calcul, une unité, une phrase de conclusion.</div></li>
-          </ul>
-        </div>
-
-        <div class="copy-panel" id="panel-proof" role="tabpanel" aria-labelledby="tab-proof" hidden>
-          <div class="copy-sheet">
-            <div class="sheet-meta">
-              <span>Exercice 5</span>
-              <span>Chapitre 07 — Thalès</span>
-            </div>
-            <p class="sheet-enonce">
-              A, M, B sont alignés dans cet ordre ; A, N, C sont alignés dans cet
-              ordre. On donne <b>AB = 5 cm</b>, <b>AM = 3 cm</b>, <b>AC = 7,5 cm</b>
-              et <b>AN = 4,5 cm</b>. Les droites (MN) et (BC) sont-elles parallèles ?
-            </p>
-            <div class="sheet-copy">
-              <p><span class="anno" data-anno="1">Les points sont alignés dans le même ordre.</span></p>
-              <p><span class="anno" data-anno="2">D'une part : <span class="fraction fraction--sm"><span class="fnum">AM</span><span class="fden">AB</span></span> = <span class="fraction fraction--sm"><span class="fnum">3</span><span class="fden">5</span></span> = 0,6.</span></p>
-              <p><span class="anno" data-anno="2">D'autre part : <span class="fraction fraction--sm"><span class="fnum">AN</span><span class="fden">AC</span></span> = <span class="fraction fraction--sm"><span class="fnum">4,5</span><span class="fden">7,5</span></span> = 0,6.</span></p>
-              <p><span class="anno" data-anno="3">Donc <span class="fraction fraction--sm"><span class="fnum">AM</span><span class="fden">AB</span></span> = <span class="fraction fraction--sm"><span class="fnum">AN</span><span class="fden">AC</span></span>.</span></p>
-              <p><span class="anno" data-anno="4">Or les points sont alignés dans le même ordre.</span></p>
-              <p class="sheet-conclusion">Donc, d'après la <b>réciproque du théorème de Thalès</b>, <b>(MN) ∥ (BC)</b>.</p>
-            </div>
-            <div class="sheet-stamp">Justifié</div>
-          </div>
-
-          <ul class="anno-list">
-            <li data-anno="1"><span class="anno-key">1</span><div><b>L'ordre des points.</b> La réciproque exige des alignements « dans le même ordre ».</div></li>
-            <li data-anno="2"><span class="anno-key">2</span><div><b>Les deux quotients séparés.</b> On calcule chacun de son côté avant de comparer.</div></li>
-            <li data-anno="3"><span class="anno-key">3</span><div><b>L'égalité.</b> Sans elle, impossible de conclure au parallélisme.</div></li>
-            <li data-anno="4"><span class="anno-key">4</span><div><b>La conclusion nommée.</b> « Réciproque du théorème de Thalès » — pas « théorème de Thalès ».</div></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="phrase-bank">
-      <div class="phrase-head">
-        <h3>La banque de phrases</h3>
-        <p>Clique pour copier. À réutiliser sans modération.</p>
-      </div>
-      <div class="phrase-chips">
-        <button class="phrase" data-copy="Les points A, M, B sont alignés dans cet ordre.">Les points A, M, B sont alignés dans cet ordre.</button>
-        <button class="phrase" data-copy="(MN) ∥ (BC).">(MN) ∥ (BC).</button>
-        <button class="phrase" data-copy="D'après le théorème de Thalès :">D'après le théorème de Thalès :</button>
-        <button class="phrase" data-copy="D'après la réciproque du théorème de Thalès, (MN) ∥ (BC).">D'après la réciproque… (MN) ∥ (BC).</button>
-        <button class="phrase" data-copy="D'une part… d'autre part…">D'une part… d'autre part…</button>
-        <button class="phrase" data-copy="Donc AN = 6 cm.">Donc AN = 6 cm.</button>
-      </div>
-      <p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
-    </div>
-
-    <div class="mistakes">
-      <div class="mistakes-head">
-        <h3>Six erreurs qui coûtent des points</h3>
-        <p>Ouvre chaque piège : la version fautive est barrée, la correction est juste en dessous.</p>
-      </div>
-      <div class="accordion" id="mistakes-accordion">
-        <details class="acc-item">
-          <summary><span class="acc-num">01</span><span>Oublier de justifier le parallélisme</span><span class="acc-plus" aria-hidden="true"></span></summary>
-          <div class="acc-body">
-            <p class="wrong-line">« D'après Thalès, AM/AB = AN/AC. »</p>
-            <p class="right-line">« Comme (MN) ∥ (BC), d'après Thalès, AM/AB = AN/AC. »</p>
-            <p>Le théorème ne s'applique que si le parallélisme est <b>déjà</b> vrai. Le citer sans l'hypothèse, c'est affirmer la conclusion.</p>
-          </div>
-        </details>
-        <details class="acc-item">
-          <summary><span class="acc-num">02</span><span>Inverser un rapport</span><span class="acc-plus" aria-hidden="true"></span></summary>
-          <div class="acc-body">
-            <p class="wrong-line">« AM/AB = AC/AN »</p>
-            <p class="right-line">« AM/AB = AN/AC »</p>
-            <p>Les deux rapports doivent être « petit sur grand » du même côté. En inversant l'un des deux, on obtient l'inverse de l'autre, pas une égalité.</p>
-          </div>
-        </details>
-        <details class="acc-item">
-          <summary><span class="acc-num">03</span><span>Confondre avec Pythagore</span><span class="acc-plus" aria-hidden="true"></span></summary>
-          <div class="acc-body">
-            <p class="wrong-line">« AB² = AM² + MB² »</p>
-            <p class="right-line">« AM/AB = AN/AC »</p>
-            <p>Pythagore parle de <b>carrés</b> et exige un angle droit. Thalès parle de <b>quotients</b> et exige une parallèle. Rien à voir.</p>
-          </div>
-        </details>
-        <details class="acc-item">
-          <summary><span class="acc-num">04</span><span>Utiliser les mauvais segments</span><span class="acc-plus" aria-hidden="true"></span></summary>
-          <div class="acc-body">
-            <p class="wrong-line">« AM/MB = AN/NC »</p>
-            <p class="right-line">« AM/AB = AN/AC »</p>
-            <p>AM/MB compare les deux morceaux du côté, pas le petit côté au côté entier. L'égalité des trois rapports n'est vraie qu'avec les côtés entiers au dénominateur.</p>
-          </div>
-        </details>
-        <details class="acc-item">
-          <summary><span class="acc-num">05</span><span>Oublier l'unité ou arrondir trop tôt</span><span class="acc-plus" aria-hidden="true"></span></summary>
-          <div class="acc-body">
-            <p class="wrong-line">« AN = 6 »</p>
-            <p class="right-line">« AN = 6 cm »</p>
-            <p>Une longueur sans unité n'a pas de sens. Et on garde la valeur exacte jusqu'au dernier calcul : arrondir au milieu change le résultat.</p>
-          </div>
-        </details>
-        <details class="acc-item">
-          <summary><span class="acc-num">06</span><span>Utiliser la réciproque pour calculer</span><span class="acc-plus" aria-hidden="true"></span></summary>
-          <div class="acc-body">
-            <p class="wrong-line">« D'après la réciproque de Thalès, MN = 5 cm. »</p>
-            <p class="right-line">« D'après le théorème de Thalès, MN = 5 cm. »</p>
-            <p>La réciproque sert à <b>prouver un parallélisme</b>, pas à calculer une longueur. Le théorème direct, lui, calcule.</p>
-          </div>
-        </details>
-      </div>
-    </div>
-
-    <div class="compare">
-      <h3>Thalès ou Pythagore ? La table de survie</h3>
-      <div class="table-scroll">
-        <table class="compare-table">
-          <thead>
-            <tr><th></th><th>Thalès</th><th>Pythagore</th></tr>
-          </thead>
-          <tbody>
-            <tr><th>Ce qu'il faut avoir</th><td>Deux droites parallèles</td><td>Un triangle rectangle</td></tr>
-            <tr><th>Ce qu'on écrit</th><td>Des quotients de longueurs</td><td>Des carrés de longueurs</td></tr>
-            <tr><th>Ce qu'on trouve</th><td>Une longueur manquante</td><td>Le troisième côté</td></tr>
-            <tr><th>Phrase type</th><td>« AM/AB = AN/AC »</td><td>« BC² = AB² + AC² »</td></tr>
-            <tr><th>Signe qui trahit</th><td>Un signe « = » entre fractions</td><td>Des exposants ²</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= 07 DÉMONSTRATION ================= -->
-  <section class="section" id="demonstration" data-section>
-    <div class="section-head">
-      <div class="section-num" aria-hidden="true">07</div>
-      <div class="section-head-text">
-        <p class="kicker">Sous le capot</p>
-        <h2>Pourquoi c'est vrai<br>(et pas de la magie)</h2>
-      </div>
-      <p class="section-intro">
-        Ce résultat n'est pas tombé du ciel. Derrière les rapports, il y a une
-        histoire d'angles : deux triangles qui ont les mêmes angles ont
-        forcément des côtés proportionnels.
-      </p>
-    </div>
-
-    <div class="proof-layout">
-      <div class="proof-stage card">
-        <svg id="proof-svg" viewBox="0 0 560 440" role="img" aria-label="Démonstration animée : les angles correspondants AMN et ABC sont égaux, donc les triangles sont semblables."></svg>
-        <div class="proof-legend">
-          <span><i class="legend-swatch legend-swatch--mint"></i> angle en M = angle en B</span>
-          <span><i class="legend-swatch legend-swatch--amber"></i> angle en N = angle en C</span>
-        </div>
-      </div>
-
-      <div class="proof-steps card">
-        <ol class="proof-list" id="proof-list">
-          <li class="is-active" data-step="0">
-            <span class="proof-num">1</span>
-            <div>
-              <h4>Une parallèle, deux angles égaux</h4>
-              <p>(MN) ∥ (BC) et la droite (AB) coupe les deux parallèles : les angles <b>correspondants</b> AMN et ABC sont égaux. Idem pour ANM et ACB.</p>
-            </div>
-          </li>
-          <li data-step="1">
-            <span class="proof-num">2</span>
-            <div>
-              <h4>Deux angles suffisent</h4>
-              <p>Un triangle est entièrement déterminé par ses angles. AMN et ABC ont les mêmes, donc ils sont <b>semblables</b> : l'un est une réduction de l'autre.</p>
-            </div>
-          </li>
-          <li data-step="2">
-            <span class="proof-num">3</span>
-            <div>
-              <h4>Donc les côtés sont proportionnels</h4>
-              <p>Dans des triangles semblables, les côtés opposés aux mêmes angles sont proportionnels. On retrouve AM/AB = AN/AC = MN/BC.</p>
-            </div>
-          </li>
-          <li data-step="3">
-            <span class="proof-num">4</span>
-            <div>
-              <h4>Bonus : les aires suivent k²</h4>
-              <p>Si les longueurs sont multipliées par k, les aires le sont par k × k = k². À k = 1/2, le petit triangle fait un quart de la surface du grand.</p>
-            </div>
-          </li>
-        </ol>
-        <div class="proof-controls">
-          <button class="icon-btn" id="proof-prev" type="button" aria-label="Étape précédente">
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4 6 10l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="proof-dots" id="proof-dots" aria-hidden="true"></div>
-          <button class="icon-btn" id="proof-next" type="button" aria-label="Étape suivante">
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="proof-notes">
-      <article class="note-card note-card--plain">
-        <span class="note-icon" aria-hidden="true">↺</span>
-        <div>
-          <h4>Et la réciproque ?</h4>
-          <p>
-            On mène par M la parallèle à (BC) : elle coupe (AC) en N′. Le
-            théorème direct donne AM/AB = AN′/AC. Or on sait aussi
-            AM/AB = AN/AC, donc AN′ = AN. Sur la demi-droite [AC), il n'y a
-            qu'un point à cette distance de A : N′ = N, et (MN) ∥ (BC).
-          </p>
-        </div>
-      </article>
-      <article class="note-card note-card--plain">
-        <span class="note-icon" aria-hidden="true">≡</span>
-        <div>
-          <h4>Un théorème vieux de 2 600 ans</h4>
-          <p>
-            Thalès n'a laissé aucun écrit. C'est Euclide, vers −300, qui en donne
-            la démonstration dans les <i>Éléments</i> (livre VI, proposition 2).
-            Au collège, on l'admet : la preuve complète utilise les triangles
-            semblables.
-          </p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ================= 08 MÉDIAS ================= -->
-  <section class="section section--tint" id="medias" data-section>
-    <div class="section-head">
-      <div class="section-num" aria-hidden="true">08</div>
-      <div class="section-head-text">
-        <p class="kicker">Le document</p>
-        <h2>Le schéma des ombres,<br>le raisonnement en un regard</h2>
-      </div>
-      <p class="section-intro">
-        Un document pour réviser autrement : le dispositif de la pyramide,
-        et le calcul qui en découle.
-      </p>
-    </div>
-
-    <div class="media-grid">
-      <figure class="media-item media-item--ombre">
-        <button class="media-zoom" data-lightbox="assets/img/pyramide-ombres.png" data-caption="Le dispositif de la pyramide : le bâton, son ombre et celle du monument. Les rayons du soleil sont parallèles." type="button" aria-label="Agrandir l'image : la pyramide et les ombres">
-          <img src="assets/img/pyramide-ombres.png" alt="Schéma montrant la hauteur d'un homme, son ombre, la hauteur de la pyramide et l'ombre du bâton." loading="lazy" width="541" height="537">
-          <span class="zoom-badge" aria-hidden="true">
-            <svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M13.2 13.2 17 17M9 6.5v5M6.5 9h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          </span>
-        </button>
-        <figcaption>
-          <span class="media-tag">Document 1</span>
-          <h3>Le schéma des ombres</h3>
-          <p>Le problème historique : mesurer une hauteur inaccessible grâce à une ombre accessible. <a href="#mesure">Le calcul est ici</a>.</p>
-        </figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- ================= 09 QUIZ ================= -->
+  <!-- ================= 05 QUIZ ================= -->
   <section class="section section--quiz" id="quiz" data-section>
     <div class="quiz-glow" aria-hidden="true"></div>
     <div class="section-head section-head--quiz">
-      <div class="section-num" aria-hidden="true">09</div>
+      <div class="section-num" aria-hidden="true">05</div>
       <div class="section-head-text">
         <p class="kicker">Le grand test</p>
         <h2>Quinze questions,<br>aucune impasse</h2>
@@ -1268,9 +871,8 @@
           </div>
           <div class="result-links">
             <a href="#histoire">L'histoire</a>
-            <a href="#projet">Le projet</a>
             <a href="#laboratoire">Le laboratoire</a>
-            <a href="#rediger">La rédaction</a>
+            <a href="#methode">La méthode</a>
           </div>
         </div>
       </div>
@@ -1301,15 +903,12 @@
         <h4>Comprendre</h4>
         <a href="#histoire">Histoire</a>
         <a href="#idee">L'idée</a>
-        <a href="#demonstration">Démonstration</a>
         <a href="#laboratoire">Laboratoire</a>
       </div>
       <div>
         <h4>Appliquer</h4>
         <a href="#methode">Méthode terrain</a>
-        <a href="#projet">Le projet</a>
-        <a href="#rediger">Rédiger</a>
-        <a href="#medias">Documents</a>
+        <a href="#mesure">Mesurer la pyramide</a>
         <a href="#quiz">Quiz</a>
         <a href="slides.html">Diaporama</a>
       </div>
@@ -1327,15 +926,7 @@
   </div>
 </footer>
 
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image agrandie" hidden>
-  <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Fermer">✕</button>
-  <button class="lightbox-nav lightbox-nav--prev" id="lightbox-prev" type="button" aria-label="Image précédente">‹</button>
-  <figure class="lightbox-figure">
-    <img id="lightbox-img" alt="">
-    <figcaption id="lightbox-caption"></figcaption>
-  </figure>
-  <button class="lightbox-nav lightbox-nav--next" id="lightbox-next" type="button" aria-label="Image suivante">›</button>
-</div>
+
 
 <noscript>
   <div class="noscript">Ce site utilise JavaScript pour ses figures interactives et son quiz. Le cours reste lisible, mais active JavaScript pour en profiter.</div>

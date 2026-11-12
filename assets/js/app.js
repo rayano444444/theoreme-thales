@@ -266,29 +266,29 @@
 
     // grille
     const grid = el('g', { opacity: '.55' }, svg);
-    for (let x = 30; x < 580; x += 44) el('line', { x1: x, y1: 16, x2: x, y2: 448, stroke: 'rgba(255,255,255,.045)', 'stroke-width': '1' }, grid);
-    for (let y = 26; y < 460; y += 44) el('line', { x1: 14, y1: y, x2: 566, y2: y, stroke: 'rgba(255,255,255,.045)', 'stroke-width': '1' }, grid);
+    for (let x = 30; x < 580; x += 44) el('line', { x1: x, y1: 16, x2: x, y2: 448, stroke: 'rgba(22,25,31,.07)', 'stroke-width': '1' }, grid);
+    for (let y = 26; y < 460; y += 44) el('line', { x1: 14, y1: y, x2: 566, y2: y, stroke: 'rgba(22,25,31,.07)', 'stroke-width': '1' }, grid);
 
-    labEl.tri = el('path', { fill: 'url(#labFill)', stroke: 'rgba(255,255,255,.4)', 'stroke-width': '1.4', 'stroke-linejoin': 'round' }, svg);
-    labEl.smallTri = el('path', { fill: 'rgba(232,181,103,.07)', stroke: 'none' }, svg);
+    labEl.tri = el('path', { fill: 'url(#labFill)', stroke: 'rgba(22,25,31,.45)', 'stroke-width': '1.4', 'stroke-linejoin': 'round' }, svg);
+    labEl.smallTri = el('path', { fill: 'rgba(232,181,103,.16)', stroke: 'none' }, svg);
     labEl.par = el('line', { stroke: '#ff5a4d', 'stroke-width': '2.4', 'stroke-dasharray': '7 6', filter: 'url(#labGlow)', 'stroke-linecap': 'round' }, svg);
     labEl.parHalo = el('line', { stroke: 'rgba(255,90,77,.15)', 'stroke-width': '9', 'stroke-linecap': 'round' }, svg);
 
     // rayons
-    labEl.ray1 = el('line', { stroke: 'rgba(255,255,255,.12)', 'stroke-width': '1', 'stroke-dasharray': '2 6' }, svg);
-    labEl.ray2 = el('line', { stroke: 'rgba(255,255,255,.12)', 'stroke-width': '1', 'stroke-dasharray': '2 6' }, svg);
+    labEl.ray1 = el('line', { stroke: 'rgba(22,25,31,.16)', 'stroke-width': '1', 'stroke-dasharray': '2 6' }, svg);
+    labEl.ray2 = el('line', { stroke: 'rgba(22,25,31,.16)', 'stroke-width': '1', 'stroke-dasharray': '2 6' }, svg);
 
     function dot(color, r) {
       const c = el('circle', { r: r || 4, fill: color, stroke: '#0b0a0d', 'stroke-width': '1.6' }, svg);
       return c;
     }
-    labEl.ptA = dot('#ffffff');
-    labEl.ptB = dot('#d9cfc4');
-    labEl.ptC = dot('#d9cfc4');
+    labEl.ptA = dot('#16191f');
+    labEl.ptB = dot('#3c3a34');
+    labEl.ptC = dot('#3c3a34');
     labEl.ptN = dot('#e8b567', 4.2);
-    labEl.handleHalo = el('circle', { r: 16, fill: 'rgba(232,181,103,.12)', stroke: 'rgba(232,181,103,.35)', 'stroke-width': '1' }, svg);
+    labEl.handleHalo = el('circle', { r: 16, fill: 'rgba(232,181,103,.18)', stroke: 'rgba(169,116,31,.45)', 'stroke-width': '1' }, svg);
     labEl.handle = el('circle', {
-      r: 7, fill: '#e8b567', stroke: '#0b0a0d', 'stroke-width': '2',
+      r: 7, fill: '#e8b567', stroke: '#f4efe4', 'stroke-width': '2',
       tabindex: '0', role: 'slider', 'aria-label': 'Position du point M sur le segment AB',
       'aria-valuemin': '12', 'aria-valuemax': '96', 'aria-valuenow': '62', cursor: 'grab'
     }, svg);
@@ -297,20 +297,20 @@
       fill: color, 'font-family': 'DM Sans, sans-serif', 'font-size': size || '14',
       'font-weight': '600', 'text-anchor': 'middle'
     });
-    labEl.lA = mkLabel('A', '#fff');
-    labEl.lB = mkLabel('B', '#d9cfc4');
-    labEl.lC = mkLabel('C', '#d9cfc4');
-    labEl.lM = mkLabel('M', '#e8b567');
-    labEl.lN = mkLabel('N', '#e8b567');
+    labEl.lA = mkLabel('A', '#16191f');
+    labEl.lB = mkLabel('B', '#3c3a34');
+    labEl.lC = mkLabel('C', '#3c3a34');
+    labEl.lM = mkLabel('M', '#a9741f');
+    labEl.lN = mkLabel('N', '#a9741f');
 
     // mesures flottantes
-    const mstyle = { fill: '#a99d90', 'font-family': 'DM Mono, monospace', 'font-size': '10.5', 'text-anchor': 'middle' };
+    const mstyle = { fill: '#6b6558', 'font-family': 'DM Mono, monospace', 'font-size': '10.5', 'text-anchor': 'middle' };
     labEl.mAM = text(svg, 0, 0, '', mstyle);
     labEl.mAN = text(svg, 0, 0, '', mstyle);
     labEl.mMN = text(svg, 0, 0, '', Object.assign({}, mstyle, { fill: '#ff5a4d' }));
-    labEl.mAB = text(svg, 0, 0, '', Object.assign({}, mstyle, { fill: '#766b5f' }));
-    labEl.mAC = text(svg, 0, 0, '', Object.assign({}, mstyle, { fill: '#766b5f' }));
-    labEl.mBC = text(svg, 0, 0, '', Object.assign({}, mstyle, { fill: '#766b5f' }));
+    labEl.mAB = text(svg, 0, 0, '', Object.assign({}, mstyle, { fill: '#5b5850' }));
+    labEl.mAC = text(svg, 0, 0, '', Object.assign({}, mstyle, { fill: '#5b5850' }));
+    labEl.mBC = text(svg, 0, 0, '', Object.assign({}, mstyle, { fill: '#5b5850' }));
 
     labSvg.addEventListener('pointerdown', startDrag);
     labSvg.addEventListener('pointermove', onDrag);
