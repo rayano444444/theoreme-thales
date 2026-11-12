@@ -1704,7 +1704,7 @@ input[type=range]::-moz-range-thumb{border-color:#fffdf7;box-shadow:0 0 0 1px va
 .hero-presentation-names{
   font-family:var(--serif);font-size:17px;letter-spacing:.01em;text-transform:none;color:var(--ink);
 }
-.hero-photo{width:50%;max-width:560px;min-width:280px;margin:0 0 22px}
+.hero-photo{width:50%;max-width:480px;min-width:280px;margin:0 0 22px}
 .hero-copy{width:100%;display:flex;flex-direction:column;align-items:center}
 .hero-copy .eyebrow{justify-content:center}
 .hero-lede{max-width:58ch;margin-left:auto;margin-right:auto}
